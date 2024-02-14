@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:note_app/widgets/note_body.dart';
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -10,15 +10,8 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xff201F25),
-        title: const Text('Notes',
-          style: TextStyle(
-            color: Colors.white),),
-
-
-      ),
+    return const Scaffold(
+      body: NoteBody(),
 
     );
   }
