@@ -9,15 +9,13 @@ class NoteBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 24),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
           SizedBox(
             height: 50,
           ),
           CustomAppBar(),
-          Padding(
-            padding: EdgeInsets.only(top: 8),),
           Expanded(child: NoteListView())
         ],
       ),
